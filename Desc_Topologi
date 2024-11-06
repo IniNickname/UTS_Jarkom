@@ -1,0 +1,27 @@
+topologi jaringan yang terdiri dari tiga router (R1 KJ, R2 CR, dan R3 KHI), masing-masing terhubung ke perangkat laptop. Topologi ini dirancang untuk mengimplementasikan protokol Routing RIP untuk mengelola jalur komunikasi antara ketiga router. 
+Berikut adalah rincian lebih lanjut tentang setiap elemen dan koneksi:
+Komponen Utama:
+Router R1 KJ:
+
+Koneksi Eth 4: Terhubung ke R2 CR dengan alamat IP 13.13.13.2.
+Koneksi Eth 3: Terhubung ke R3 KHI dengan alamat IP 23.23.23.1.
+Koneksi Eth 2: Terhubung ke Laptop Device dengan alamat IP 192.167.2.1/24.
+Router R2 CR:
+
+Koneksi Eth 4: Terhubung ke R1 KJ dengan alamat IP 12.12.12.1.
+Koneksi Eth 3: Terhubung ke Laptop Device dengan alamat IP 16.16.16.2.
+Router R3 KHI:
+
+Koneksi Eth 4: Terhubung ke R2 CR dengan alamat IP 22.22.22.1.
+Koneksi Eth 3: Terhubung ke Laptop Device dengan alamat IP 17.17.17.2.
+Laptop Devices:
+
+Laptop Device 1: Terhubung ke R1 KJ melalui Eth 2 dengan alamat IP 192.167.2.1/24.
+Laptop Device 2: Terhubung ke R2 CR melalui Eth 2 dengan alamat IP 192.167.2.1/24.
+Laptop Device 3: Terhubung ke R3 KHI melalui Eth 2 dengan alamat IP 192.167.2.1/24.
+Protokol dan Pengaturan Jaringan:
+Protokol Routing: Protokol yang digunakan adalah RIP (Routing Information Protocol), yang bertugas mengelola informasi routing di antara router-router dalam topologi ini. RIP membantu dalam pertukaran informasi tentang jalur yang tersedia dan memutuskan rute terbaik berdasarkan hop count.
+Koneksi Antar Router:
+R1 KJ ↔ R2 CR: Menggunakan koneksi Eth 4 dengan alamat IP 13.13.13.x.
+R1 KJ ↔ R3 KHI: Menggunakan koneksi Eth 3 dengan alamat IP 23.23.23.x.
+R2 CR ↔ R3 KHI: Menggunakan koneksi Eth 4 dengan alamat IP 22.22.22.x.
